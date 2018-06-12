@@ -3,19 +3,70 @@ Cheatsheet for learnings on React and the various resources
 
 # React
 
-## Unidirectional Data flow
+## What's special about React?
+##### Compositional Model
+* Simple functions combined to create another function  
+* Declarative Nature  
+Car temp analogy is:  
+ Imperative - you fiddle with hot/cold dial to get the right temp  
+Declarative - car has temp setting. You tell it, it keeps it there
 
+##### Unidrectional Data Flow
+* React is undirectional - data flows one way, down to components, simplifying flows.
+* Data updates are sent to the parent and flow back down
+* Angular & Ember are bidirectional
 
-## React Resources
-[Sandbox for editing React code] (https://codesandbox.io/s/new)
+#### Web 2.0
+* Because of the composition of a page using components, updates only re-render that components whose state/data has changed, avoiding the need to send the whole page back and forth between the browser and server.
 
-[Sandbox for editing React code] (https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live)
-[Sandbox for editing React code] (https://reactjs.org/docs/components-and-props.html)
-[Sandbox for editing React code] (https://tylermcginnis.com/imperative-vs-declarative-programming/)
-[Sandbox for editing React code] (https://medium.com/@dan_abramov/react-components-elements-and-instances-90800811f8ca
+###### React is really just javascript
+* Enough said  
+
+### React Resources
+[ReactJs.org - the definitive guide](https://reactjs.org/)
+[ReactJS - A great place to start](https://reactjs.org/docs/hello-world.html)
+[Sandbox for editing React code](https://codesandbox.io/s/new)  
+
+[Components and Props](https://reactjs.org/docs/components-and-props.html)  
+[Imperative vs declarative Programming](https://tylermcginnis.com/imperative-vs-declarative-programming/)  
+[9 things every React Beginner Should Know](https://camjackson.net/post/9-things-every-reactjs-beginner-should-know)  
+[How Virtual-DOM and diffing works in React](https://medium.com/@gethylgeorge/how-virtual-dom-and-diffing-works-in-react-6fc805f9f84e)  
+[Optimizing Performance](https://reactjs.org/docs/optimizing-performance.html#avoid-reconciliation)
 
 ### React Courses
-Styling React http://stylingreact.com/
+[Styling React](http://stylingreact.com/)
+
+## Creating React Applications
+
+Create-React-App
+This is a great starting place for creating React applications
+
+Meteor
+An end-to-end Javascript framework. This is one of the best ways to be highly productive(one of may favorites). The only downside is you'll be using Node.JS, but Meteor abstracts a lot of it away making it easy to use and productive, but you want learn Node.JS in-depth.
+
+## Components and Props
+
+
+### Components and Props - Resources
+[React Components and Elements](https://medium.com/@dan_abramov/react-components-elements-and-instances-90800811f8ca)  
+
+## State
+
+
+### State resources
+[State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)  
+[You Probably Don't Need Derived State
+](https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html)
+[Thinking in React](https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live)  
+[React setState usage and gotchas
+](https://itnext.io/react-setstate-usage-and-gotchas-ac10b4e03d60)  
+
+## Pure components
+
+### Pure Components - resources
+[React JS: what is a PureComponent?](http://lucybain.com/blog/2018/react-js-pure-component/)
+
+
 
 # React Router
 
