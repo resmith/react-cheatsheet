@@ -119,11 +119,31 @@ class App extends React.Component {
     const { store } = this.props
     const { todos, goals } = store.getState()
 ```
+
+
+### React-Redux
+You can uses Redux and its store with the it various functions: creatStore(), (subscribe()), getState, dispatch(). To access only the part of state needed you can use a Provier component with a connect() function, which the creators of redux have included in the react-redux package. 
+
+
+### React-Redux Resources
+[Usage Redux with React](https://redux.js.org/basics/usage-with-react)
+
+
 ## Redux Middleware
 What is Redux middleware?
 REdux middleware  allows injection of functionality between the calling of the dispatch and running of the reducer. It allows data checks, logging, etc. Middleware is in the chain of events after dispatch andbefore the store is updated.
 
 ## Calling Redux Middleware
+
+## Redux Thunk
+Redux by itself only supports the synchronous flow of data. Redux Thunk is called via a Redux middleware and provides asynchronicity support for Redux applications. The helps provide cleaner code by moving the dispatch logic for asynchronous calls to the action creators, making the action creators the sole source of changes to state and api calls to persist the state change (to a Db or whatever datastore is being used).
+
+
+### Redux Thunk REsources
+[Redux Thunk on GitHub](https://github.com/reduxjs/redux-thunk)  
+[Async Flow](https://redux.js.org/advanced/async-flow)  
+[Dan Abramov's Stack Overflow on Redux Thunk](https://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559)
+
 
 ### Redux Resources
 https://css-tricks.com/learning-react-redux/
